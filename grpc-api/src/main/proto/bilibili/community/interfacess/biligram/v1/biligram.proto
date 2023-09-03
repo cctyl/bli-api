@@ -1,0 +1,5 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package bilibili.community.interfacess.biligram.v1;
+option java_package = "bilibili.community.interfacess.biligram.v1";

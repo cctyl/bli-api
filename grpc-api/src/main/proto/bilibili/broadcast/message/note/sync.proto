@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package bilibili.broadcast.message.note;
+
+//
+message Sync {
+    // 笔记id
+    int64 note_id = 1;
+    // 唯一标示
+    string hash = 2;
+}

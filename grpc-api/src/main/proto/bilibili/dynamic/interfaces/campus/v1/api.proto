@@ -1,0 +1,3 @@
+syntax = "proto3";
+package bilibili.dynamic.interfaces.campus.v1;
+option java_package = "bilibili.dynamic.interfaces.campus.v1";
