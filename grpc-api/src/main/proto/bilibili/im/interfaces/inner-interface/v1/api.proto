@@ -1,8 +1,8 @@
 syntax = "proto3";
 option java_multiple_files = true;
 
-package bilibili.im.interface.inner.interface.v1;
-option java_package = "bilibili.im.interface.inner.interface.v1";
+package bilibili.im.interfaces.inner.interfaces.v1;
+option java_package = "bilibili.im.interfaces.inner.interfaces.v1";
 //
 service InnerInterface {
     //

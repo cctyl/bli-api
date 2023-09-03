@@ -1,7 +1,7 @@
 syntax = "proto3";
 option java_multiple_files = true;
 
-package bilibili.app.interface.v1;
+package bilibili.app.interfaces.v1;
 
 // 搜索
 service Search {
