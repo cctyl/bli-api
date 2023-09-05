@@ -1,5 +1,6 @@
 syntax = "proto3";
-option java_multiple_files = true;
+option java_multiple_files = false;
+option java_outer_classname = "NativeactRpcProto";
 
 package bilibili.app.nativeact.v1;
 
@@ -508,56 +509,56 @@ message Module {
     //
     bool is_feed = 9;
 }
-
+//
+enum CardDetailCase {
+    CARDDETAIL_NOT_SET            = 0;  //
+    EDITOR_RECOMMEND_CARD         = 10; //
+    PARTICIPATION_CARD            = 11; //
+    HEADER_CARD                   = 12; //
+    DYNAMIC_CARD                  = 13; //
+    TEXT_CARD                     = 14; //
+    TEXT_TITLE_CARD               = 15; //
+    IMAGE_TITLE_CARD              = 16; //
+    DYNAMIC_MORE_CARD             = 17; //
+    DYNAMIC_ACT_MORE_CARD         = 18; //
+    LIVE_CARD                     = 19; //
+    CAROUSEL_IMG_CARD             = 20; //
+    CAROUSEL_WORD_CARD            = 21; //
+    RESOURCE_CARD                 = 22; //
+    RESOURCE_MORE_CARD            = 23; //
+    GAME_CARD                     = 24; //
+    VIDEO_CARD                    = 25; //
+    VIDEO_MORE_CARD               = 26; //
+    RECOMMEND_CARD                = 27; //
+    RECOMMEND_VERTICAL_CARD       = 28; //
+    RELATIVEACT_CARD              = 29; //
+    RELATIVEACT_CAPSULE_CARD      = 30; //
+    STATEMENT_CARD                = 31; //
+    ICON_CARD                     = 32; //
+    VOTE_CARD                     = 33; //
+    RESERVE_CARD                  = 34; //
+    TIMELINE_HEAD_CARD            = 35; //
+    TIMELINE_EVENT_TEXT_CARD      = 36; //
+    TIMELINE_EVENT_IMAGE_CARD     = 37; //
+    TIMELINE_EVENT_IMAGETEXT_CARD = 38; //
+    TIMELINE_EVENT_RESOURCE_CARD  = 39; //
+    TIMELINE_MORE_CARD            = 40; //
+    TIMELINE_UNFOLD_CARD          = 41; //
+    OGV_ONE_CARD                  = 42; //
+    OGV_THREE_CARD                = 43; //
+    OGV_MORE_CARD                 = 44; //
+    NAVIGATION_CARD               = 45; //
+    REPLY_CARD                    = 46; //
+    TAB_CARD                      = 47; //
+    NEWACT_HEADER_CARD            = 48; //
+    NEWACT_AWARD_CARD             = 49; //
+    NEWACT_STATEMENT_CARD         = 50; //
+    PROGRESS_CARD                 = 51; //
+    SELECT_CARD                   = 52; //
+}
 //
 message ModuleItem {
-    //
-    enum CardDetailCase {
-        CARDDETAIL_NOT_SET            = 0;  //
-        EDITOR_RECOMMEND_CARD         = 10; //
-        PARTICIPATION_CARD            = 11; //
-        HEADER_CARD                   = 12; //
-        DYNAMIC_CARD                  = 13; //
-        TEXT_CARD                     = 14; //
-        TEXT_TITLE_CARD               = 15; //
-        IMAGE_TITLE_CARD              = 16; //
-        DYNAMIC_MORE_CARD             = 17; //
-        DYNAMIC_ACT_MORE_CARD         = 18; //
-        LIVE_CARD                     = 19; //
-        CAROUSEL_IMG_CARD             = 20; //
-        CAROUSEL_WORD_CARD            = 21; //
-        RESOURCE_CARD                 = 22; //
-        RESOURCE_MORE_CARD            = 23; //
-        GAME_CARD                     = 24; //
-        VIDEO_CARD                    = 25; //
-        VIDEO_MORE_CARD               = 26; //
-        RECOMMEND_CARD                = 27; //
-        RECOMMEND_VERTICAL_CARD       = 28; //
-        RELATIVEACT_CARD              = 29; //
-        RELATIVEACT_CAPSULE_CARD      = 30; //
-        STATEMENT_CARD                = 31; //
-        ICON_CARD                     = 32; //
-        VOTE_CARD                     = 33; //
-        RESERVE_CARD                  = 34; //
-        TIMELINE_HEAD_CARD            = 35; //
-        TIMELINE_EVENT_TEXT_CARD      = 36; //
-        TIMELINE_EVENT_IMAGE_CARD     = 37; //
-        TIMELINE_EVENT_IMAGETEXT_CARD = 38; //
-        TIMELINE_EVENT_RESOURCE_CARD  = 39; //
-        TIMELINE_MORE_CARD            = 40; //
-        TIMELINE_UNFOLD_CARD          = 41; //
-        OGV_ONE_CARD                  = 42; //
-        OGV_THREE_CARD                = 43; //
-        OGV_MORE_CARD                 = 44; //
-        NAVIGATION_CARD               = 45; //
-        REPLY_CARD                    = 46; //
-        TAB_CARD                      = 47; //
-        NEWACT_HEADER_CARD            = 48; //
-        NEWACT_AWARD_CARD             = 49; //
-        NEWACT_STATEMENT_CARD         = 50; //
-        PROGRESS_CARD                 = 51; //
-        SELECT_CARD                   = 52; //
-    }
+
     //
     CardDetailCase card_type = 1;
     //

@@ -1,5 +1,6 @@
 syntax = "proto3";
-option java_multiple_files = true;
+option java_multiple_files = false;
+option java_outer_classname = "ApiRpcProto";
 
 package bilibili.app.resource.privacy.v1;
 option java_package = "bilibili.app.resource.privacy.v1";
